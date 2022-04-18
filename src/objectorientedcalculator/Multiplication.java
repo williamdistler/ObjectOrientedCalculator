@@ -10,7 +10,7 @@ public class Multiplication {
 
     public int multiply(int x, int y) {
         int result = x * y;
-        history.results.add(x + " x " + y + " = " + result);
+        history.addResult(x + " x " + y + " = " + result);
         return result;
     }
 

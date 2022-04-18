@@ -10,7 +10,7 @@ public class SquareNumber {
 
     public int squareNumber(int x) {
         int result = x * x;
-        history.results.add(x + "^2 = " + result);
+        history.addResult(x + "^2 = " + result);
         return result;
     }
 

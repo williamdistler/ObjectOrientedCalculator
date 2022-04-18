@@ -10,7 +10,7 @@ public class SquareRoot {
 
     public float doSquareRoot(int x) {
         float result = (float) Math.sqrt(x);
-        history.results.add("Raiz quadrada de " + x + " = " + result);
+        history.addResult("Raiz quadrada de " + x + " = " + result);
         return result;
     }
 

@@ -10,7 +10,7 @@ public class Division {
 
     public float divide(int x, int y) {
         float result = (float) x / y;
-        History.results.add(x + " / " + y + " = " + result);
+        history.addResult(x + " / " + y + " = " + result);
         return result;
     }
 

@@ -15,12 +15,12 @@ import java.util.List;
  */
 public class History {
     
-    static List<String> results = new ArrayList<>(Arrays.asList());
-    
-    public static History instance;
+    private List<String> results = new ArrayList<String>();
+
+    private static History instance;
     
     public List<String> getHistory() {
-        return results;
+        return this.results;
     }
     
     public void addResult(String result) {
@@ -29,7 +29,8 @@ public class History {
     
     public static History getInstance(){
         if (instance == null) {
-            return new History();
+            instance = new History();
+            return instance;
         }
         return instance;
     }

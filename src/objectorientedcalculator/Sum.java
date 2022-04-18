@@ -10,7 +10,7 @@ public class Sum {
 
     public int add(int x, int y) {
         int result = x + y;
-        history.results.add(x + " + " + y + " = " + result);
+        history.addResult(x + " + " + y + " = " + result);
         return result;
     }
 

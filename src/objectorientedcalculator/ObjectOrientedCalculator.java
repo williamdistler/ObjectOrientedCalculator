@@ -30,7 +30,6 @@ public class ObjectOrientedCalculator {
 
         while (operator != 0) {
             operator = getOperation.getOperation();
-
             int operatorTypeVar = operatorType.getOperatorType(operator);
 
             if (operatorTypeVar == 0) {
@@ -52,6 +51,10 @@ public class ObjectOrientedCalculator {
                 System.out.println("-------------------------------------------");
             } else if (operatorTypeVar == 1) {
                 System.out.println(history.getHistory());
+            } else if (operatorTypeVar == 3) {
+                System.out.println("Operacao Invalida.");
+                System.out.println("Digite a operacao novamente:");
+                continue;
             } else {
                 System.out.println("Utilizar resultado da ultima operacao?");
                 System.out.println("0 - SIM");
