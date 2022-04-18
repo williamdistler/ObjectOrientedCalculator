@@ -5,13 +5,13 @@ package objectorientedcalculator;
  * @author williamdistler
  */
 public class Division {
-    
-    History history = new History();
-    
+
+    History history = History.getInstance();
+
     public float divide(int x, int y) {
         float result = (float) x / y;
-        history.results.add(x + " / " + y + " = " + result);
+        History.results.add(x + " / " + y + " = " + result);
         return result;
     }
-    
+
 }

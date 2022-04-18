@@ -22,7 +22,7 @@ public class ObjectOrientedCalculator {
         OperatorType operatorType = new OperatorType();
         Operation getOperation = new Operation();
         Calculate calculate = new Calculate();
-        History history = new History();
+        History history = History.getInstance();
         float result = 0.0f;
 
         guide.getGuide();

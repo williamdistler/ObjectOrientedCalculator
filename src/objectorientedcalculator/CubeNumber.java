@@ -6,7 +6,7 @@ package objectorientedcalculator;
  */
 public class CubeNumber {
     
-    History history = new History();
+    History history = History.getInstance();
     
     public int cubeNumber(int x) {
         int result = x * x * x;

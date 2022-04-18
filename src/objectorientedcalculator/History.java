@@ -15,7 +15,9 @@ import java.util.List;
  */
 public class History {
     
-    List<String> results = new ArrayList<>(Arrays.asList());
+    static List<String> results = new ArrayList<>(Arrays.asList());
+    
+    public static History instance;
     
     public List<String> getHistory() {
         return results;
@@ -23,5 +25,12 @@ public class History {
     
     public void addResult(String result) {
         this.results.add(result);
+    }
+    
+    public static History getInstance(){
+        if (instance == null) {
+            return new History();
+        }
+        return instance;
     }
 }
