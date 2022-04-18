@@ -6,9 +6,12 @@ package objectorientedcalculator;
  */
 public class SquareNumber {
     
-    public String squareNumber(int x) {
+    History history = new History();
+    
+    public int squareNumber(int x) {
         int result = x * x;
-        return x + "^2 = " + result;
+        history.results.add(x + "^2 = " + result);
+        return result;
     }
     
 }

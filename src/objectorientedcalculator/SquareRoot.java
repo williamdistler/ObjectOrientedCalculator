@@ -6,9 +6,12 @@ package objectorientedcalculator;
  */
 public class SquareRoot {
     
-    public String doSquareRoot(int x) {
+    History history = new History();
+    
+    public float doSquareRoot(int x) {
         float result = (float) Math.sqrt(x);
-        return "Raiz quadrada de " + x + " = " + result;
+        history.results.add("Raiz quadrada de " + x + " = " + result);
+        return result;
     }
     
 }

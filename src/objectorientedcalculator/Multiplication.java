@@ -6,9 +6,12 @@ package objectorientedcalculator;
  */
 public class Multiplication {
     
-    public String multiply(int x, int y) {
+    History history = new History();
+    
+    public int multiply(int x, int y) {
         int result = x * y;
-        return x + " x " + y + " = " + result;
+        history.results.add(x + " x " + y + " = " + result);
+        return result;
     }
     
 }

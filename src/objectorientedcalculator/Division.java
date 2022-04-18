@@ -6,9 +6,12 @@ package objectorientedcalculator;
  */
 public class Division {
     
-    public String divide(int x, int y) {
+    History history = new History();
+    
+    public float divide(int x, int y) {
         float result = (float) x / y;
-        return x + " / " + y + " = " + result;
+        history.results.add(x + " / " + y + " = " + result);
+        return result;
     }
     
 }

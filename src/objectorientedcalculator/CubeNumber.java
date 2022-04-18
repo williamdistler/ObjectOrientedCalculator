@@ -6,9 +6,12 @@ package objectorientedcalculator;
  */
 public class CubeNumber {
     
-    public String cubeNumber(int x) {
+    History history = new History();
+    
+    public int cubeNumber(int x) {
         int result = x * x * x;
-        return x + "^3 = " + result;
+        history.addResult(x + "^3 = " + result);
+        return result;
     }
     
 }

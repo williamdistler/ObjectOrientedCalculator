@@ -21,4 +21,7 @@ public class History {
         return results;
     }
     
+    public void addResult(String result) {
+        this.results.add(result);
+    }
 }

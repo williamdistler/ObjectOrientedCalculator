@@ -6,9 +6,12 @@ package objectorientedcalculator;
  */
 public class Sum {
     
-    public String add(int x, int y) {
+    History history = new History();
+    
+    public int add(int x, int y) {
         int result = x + y;
-        return x + " + " + y + " = " + result;
+        history.results.add(x + " + " + y + " = " + result);
+        return result;
     }
     
 }

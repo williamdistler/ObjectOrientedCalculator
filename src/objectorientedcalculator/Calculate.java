@@ -17,9 +17,9 @@ public class Calculate {
     RootCubic rootCubic = new RootCubic();
     Logarithm logarithm = new Logarithm();
     
-    String result;
+    float result;
     
-    public String getResultOneNumber(int operation, int num) {
+    public float getResultOneNumber(int operation, int num) {
         switch (operation) {
             case 5:
                 result = squareNumber.squareNumber(num);
@@ -40,9 +40,7 @@ public class Calculate {
         return result;
     }
     
-    public String getResultTwoNumbers(int operation, int n1, int n2) {
-        
-        History history = new History();
+    public float getResultTwoNumbers(int operation, int n1, int n2) {
         
         switch (operation) {
             case 1:

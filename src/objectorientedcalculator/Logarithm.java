@@ -6,9 +6,12 @@ package objectorientedcalculator;
  */
 public class Logarithm {
     
-    public String logarithm(int x) {
+    History history = new History();
+    
+    public float logarithm(int x) {
         float result = (float) Math.log(x);
-        return "log(" + x + ") = " + result;
+        history.results.add("log(" + x + ") = " + result);
+        return result;
     }
     
 }

@@ -6,10 +6,12 @@ package objectorientedcalculator;
  */
 public class RootCubic {
     
-    public String makeCubeRoot(int x) {
+    History history = new History();
+    
+    public float makeCubeRoot(int x) {
         float result = (float) Math.cbrt(x);
-        return "Raiz cubica de " + x + " = " + result;
-        
+        history.results.add("Raiz cubica de " + x + " = " + result);
+        return result;
     }
     
 }
